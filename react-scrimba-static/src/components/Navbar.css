@@ -1,0 +1,17 @@
+.navbar {
+  padding: 20px 15px;
+  display: flex;
+  align-items: center;
+  color: rgb(91, 217, 248);
+  background-color: rgb(24, 26, 29);
+}
+
+.navbar > h1 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-image {
+  width: 30px;
+  height: 30px;
+}
