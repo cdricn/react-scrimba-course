@@ -1,15 +1,16 @@
 import './App.css'
 import Header from './components/Header'
+import Entry from './components/Entry'
 
 function App() {
 
   return (
     <>
-      <div className='main-section'>
-        <div className='main-container'>
-          <Header />
-        </div>
-      </div>
+      <Header />
+      <main>
+        <Entry />
+        <Entry />
+      </main>
     </>
   )
 }

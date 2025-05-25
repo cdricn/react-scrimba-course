@@ -4,7 +4,7 @@ header {
   align-items: center;
   justify-content: center;
   gap: 3px;
-  background-color: rgb(240, 94, 94);
+  background-color: var(--color-red);
 }
 
 .globe {
