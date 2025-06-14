@@ -1,6 +1,23 @@
+.main-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 35%;
+  min-width: 300px;
+  color: var(--color-black);
+}
+.main-container > h2 {
+  margin-top: 5px;
+  font-size: 30px;
+}
+.main-container > ul {
+  margin-top: 5px;
+  padding-left: 15px;
+}
+
 .main-form {
   margin-top: 5rem;
-  padding: 10px;
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -27,3 +44,4 @@
 .button:hover {
   background-color: var(--color-blackhover);
 }
+
