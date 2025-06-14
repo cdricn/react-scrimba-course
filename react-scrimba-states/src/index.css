@@ -3,9 +3,9 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  color-scheme: light;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color:var(--color-darkwhite);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,7 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
 
   --color-black: #141414;
-  --color-white: #f0f0f0;
+  --color-blackhover: #383838;
+  --color-white: #ffffff;
+  --color-darkwhite: #f3f3f3;
+  --color-shadow: #dfdfdf;
 }
 
 *, *::before, *::after {
