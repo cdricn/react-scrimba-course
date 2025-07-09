@@ -12,6 +12,12 @@ export default function Scrim4() {
   })
 
   function toggleFavorite() {
+    setContact(prev => { 
+      return {
+        ...prev, 
+        isFavorite: !prev.isFavorite
+      }
+    })
     console.log("Toggle Favorite")
   }
 
