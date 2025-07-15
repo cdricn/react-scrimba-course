@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './scrim2.css'
 
-export default function App() {
+export default function Scrim2() {
     /**
      * Challenge: 
      * Create state to track our count value (initial value is 0)

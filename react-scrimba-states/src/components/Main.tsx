@@ -4,10 +4,7 @@ import { useState } from 'react'
 export default function Main() {
   const [ingredients, setIngredients] = useState(Array<string>)
 
-  const handleSubmit = (event:React.FormEvent<HTMLFormElement>) => {
-
-    event.preventDefault();
-    const formData = new FormData(event.currentTarget);
+  function addIngredient(formData:FormData) {
     const newIngredient = formData.get("ingredient") as string;
     setIngredients(prev => [...prev, newIngredient])
   }
@@ -15,7 +12,7 @@ export default function Main() {
   return (
     <main>
       <div className='main-container'>
-        <form className="main-form" onSubmit={handleSubmit} >
+        <form className="main-form" action={addIngredient} >
           <input 
             type="text"
             id="ingredient"
