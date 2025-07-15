@@ -1,4 +1,4 @@
-import styles from './scrim5.module.css'
+import styles from '../scrim.module.css'
 
 export default function Scrim5() {
 
