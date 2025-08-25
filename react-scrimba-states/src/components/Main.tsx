@@ -6,7 +6,37 @@ export default function Main() {
 
   function addIngredient(formData:FormData) {
     const newIngredient = formData.get("ingredient") as string;
-    setIngredients(prev => [...prev, newIngredient])
+    
+    if (newIngredient) {
+      setIngredients(prev => [...prev, newIngredient])
+    }
+  }
+
+  function displayIngredients() {
+    return(
+      ingredients.length < 1 ? null :
+      <section className='ingredients'>
+        <h2>Ingredients on hand:</h2>
+        <ul>
+          {
+            ingredients.map((item, i)=>{
+              return (
+                <li key={i}>{item}</li>
+              )
+            })
+          }
+        </ul>
+        { ingredients.length < 4 ? null :
+          <div className="get-recipe-container">
+            <div>
+              <h3>Ready for a recipe?</h3>
+              <p>Generate a recipe from your list of ingredients.</p>
+            </div>
+            <button>Get a recipe</button>
+          </div>
+        }
+      </section>
+    )
   }
 
   return (
@@ -26,16 +56,7 @@ export default function Main() {
             className="button"
           > + Add Ingredient </button>
         </form>
-        <h2>Ingredients on hand:</h2>
-        <ul>
-          {
-            ingredients.map((item, i)=>{
-              return (
-                <li key={i}>{item}</li>
-              )
-            })
-          }
-        </ul>
+        {displayIngredients()}
       </div>
     </main>
   )

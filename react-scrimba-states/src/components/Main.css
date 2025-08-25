@@ -7,11 +7,12 @@
   min-width: 300px;
   color: var(--color-black);
 }
-.main-container > h2 {
+.ingredients > h2 {
   margin-top: 5px;
   font-size: 30px;
+  font-weight: 500;
 }
-.main-container > ul {
+.ingredients > ul {
   margin-top: 5px;
   padding-left: 15px;
 }
@@ -45,3 +46,29 @@
   background-color: var(--color-blackhover);
 }
 
+.get-recipe-container {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(231, 226, 221);
+}
+
+.get-recipe-container h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.get-recipe-container p {
+  font-size: 16px;
+  color: rgb(125, 125, 129);
+}
+
+.get-recipe-container button {
+  border: 0;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(190, 110, 63);
+}
