@@ -9,7 +9,7 @@ export default function App() {
   return (
     <>
       <Header />
-      <Scrim9/>
+      <Scrim9 darkMode={true}/>
     </>
   )
 }
